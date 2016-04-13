@@ -15,4 +15,19 @@ String telephone
 
 String toString(){"$name, $email, $telephone"}
 
+static constraints = {
+
+name()
+
+email()
+
+username()
+
+password()
+
+telephone()
+
 }
+
+}
+
