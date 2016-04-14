@@ -10,6 +10,8 @@ String studentId
 
 String course
 
+String toString(){"$name, $studentId, $email"}
+
     static constraints = {
 
 name()

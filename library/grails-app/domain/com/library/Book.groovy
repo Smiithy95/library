@@ -14,8 +14,7 @@ Date returnDate
 
 String student
 
-String toString(){
- "$title, $author"}
+String toString(){"$title, $author"}
 
     static constraints = {
 
