@@ -15,8 +15,11 @@ class BookSpec extends Specification {
     def cleanup() {
     }
 
-    void "test something"() {
-        expect:"fix me"
-            true == false
+    void toString() {
+        when: "A Book has title and author"
+        def book = new Book(title: 'Advanced PHP',
+                           author: 'Gerry Form')
+        then: "the to String method will merge them. "
+        book.toString()== 'Advanced PHP, Gerry Form'
     }
 }
