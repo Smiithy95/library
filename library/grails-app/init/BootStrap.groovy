@@ -31,7 +31,7 @@ class BootStrap {
    def library2 = new Library( location: 'Collegiate',
                            openingHours: '24/7',
                                    book: 'Advanced PHP',
-                                student: 'Matt',
+                                student: 'James',
                               librarian: 'Sarah').save()
 
    def library3 = new Library( location: 'Owen',
@@ -39,6 +39,27 @@ class BootStrap {
                                    book: 'Hogwarts: A History',
                                 student: 'Harry',
                               librarian: 'Andy').save()
+
+   def course1 = new Course(      title: 'Computing',
+                                  tutor: 'Stephen Lofthouse',
+                                   code: 'Com123',
+                             department: 'ACES',
+                            description: 'Variety of modules to enhance your technical ability!').save()
+
+   def course2 = new Course(      title: 'History',
+                                  tutor: 'Tom Oxspring',
+                                   code: 'His123',
+                             department: 'Arts',
+                            description: 'In-depth study of eras to enhance your historical knowledge!').save()
+
+   def course3 = new Course(      title: 'Physics',
+                                  tutor: 'Alex Swinden',
+                                   code: 'Phy123',
+                             department: 'Sciences',
+                            description: 'Mind blowing practicals in top quality labs!').save()
+
+
+
     }
     def destroy = {
     }
