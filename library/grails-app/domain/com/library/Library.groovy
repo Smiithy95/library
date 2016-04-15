@@ -6,11 +6,13 @@ class Library {
 
  String openingHours
 
- String book
+ Book book
 
- String student
+ Student student
 
  Librarian librarian
+
+ static hasMany=[librarians: Librarian, students: Student, books: Book]
 
  String toString(){"$location, $librarian, $openingHours"}
 

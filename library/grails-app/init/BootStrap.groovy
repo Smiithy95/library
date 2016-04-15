@@ -22,24 +22,6 @@ class BootStrap {
                                password: 'Matt01',
                               telephone: '0114 2932572').save()
 
-   def library1 = new Library( location: 'Adsetts',
-                           openingHours: '24/7',
-                                   book: 'Lord of The Flies',
-                                student: 'Will',
-                              librarian:  librarian3).save()
-
-   def library2 = new Library( location: 'Collegiate',
-                           openingHours: '24/7',
-                                   book: 'Advanced PHP',
-                                student: 'James',
-                              librarian:  librarian1).save()
-
-   def library3 = new Library( location: 'Owen',
-                           openingHours: '24/7',
-                                   book: 'Hogwarts: A History',
-                                student: 'Harry',
-                              librarian:  librarian2).save()
-
    def course1 = new Course(      title: 'Computing',
                                   tutor: 'Stephen Lofthouse',
                                    code: 'Com123',
@@ -94,6 +76,35 @@ class BootStrap {
                              returnDate:  new Date('06/03/2016'),
                                 student: 'Harry').save()
 
+   def library1 = new Library( location: 'Adsetts',
+                           openingHours: '24/7',
+                                   book:  book3,
+                                student:  student3,
+                              librarian:  librarian3).save()
+
+   def library2 = new Library( location: 'Collegiate',
+                           openingHours: '24/7',
+                                   book:  book1,
+                                student:  student1,
+                              librarian:  librarian1).save()
+
+   def library3 = new Library( location: 'Owen',
+                           openingHours: '24/7',
+                                   book:  book2,
+                                student:  student2,
+                              librarian:  librarian2).save()
+
+                           library1.addToLibrarians(librarian3)
+                           library2.addToLibrarians(librarian1)
+                           library3.addToLibrarians(librarian2)
+
+                           library1.addToStudents(student3)
+                           library2.addToStudents(student1)
+                           library3.addToStudents(student2)
+
+                           library1.addToBooks(book3)
+                           library2.addToBooks(book1)
+                           library3.addToBooks(book2)
 
     }
     def destroy = {
