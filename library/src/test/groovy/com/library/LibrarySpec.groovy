@@ -19,8 +19,8 @@ class LibrarySpec extends Specification {
         when: "A Library has location, librarian and openingHours"
         def library = new Library(location: 'Adsetts',
                                  librarian: 'Andy',
-                              openingHours: 'Mon - Fri')
+                              openingHours: '24/7')
         then: "the to String method will merge them. "
-        library.toString()== 'Adsetts, Andy, Mon - Fri'
+        library.toString()== 'Adsetts, Andy, 24/7'
     }
 }
