@@ -8,7 +8,7 @@ String email
 
 String studentId
 
-String course
+Course course
 
 String toString(){"$name, $studentId, $email"}
 
