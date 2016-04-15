@@ -58,6 +58,22 @@ class BootStrap {
                              department: 'Sciences',
                             description: 'Mind blowing practicals in top quality labs!').save()
 
+   def student1 = new Student(     name: 'Will',
+                                  email: 'will@student.com',
+                              studentId: 'b4025516',
+                                 course: 'Computing').save()
+
+   def student2 = new Student(     name: 'Harry',
+                                  email: 'Harry@student.com',
+                              studentId: 'b4037745',
+                                 course: 'Physics').save()
+
+   def student3 = new Student(     name: 'James',
+                                  email: 'james@student.com',
+                              studentId: 'b4061532',
+                                 course: 'History').save()
+
+
 
 
     }
