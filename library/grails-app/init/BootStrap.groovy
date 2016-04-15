@@ -73,7 +73,26 @@ class BootStrap {
                               studentId: 'b4061532',
                                  course: 'History').save()
 
+   def book1 = new Book(          title: 'Lord of The Flies',
+                                 author: 'William Golding',
+                                   isbn: '0-3234-3267-7',
+                           dateBorrowed: 'new Date('10/01/2016')',
+                             returnDate: 'new Date('17/01/2016')',
+                                student: 'Will').save()
 
+   def book2 = new Book(          title: 'Advanced PHP',
+                                 author: 'Gerry Form',
+                                   isbn: '0-5733-7934-5',
+                           dateBorrowed: 'new Date('02/12/2015')',
+                             returnDate: 'new Date('14/01/2016')',
+                                student: 'James').save()
+
+   def book3 = new Book(          title: 'Hogwarts: A History',
+                                 author: 'Albus Dumbledore',
+                                   isbn: '0-6398-2865-3',
+                           dateBorrowed: 'new Date('29/02/2016')',
+                             returnDate: 'new Date('06/03/2016')',
+                                student: 'Harry').save()
 
 
     }
